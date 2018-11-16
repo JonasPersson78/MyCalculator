@@ -43,6 +43,30 @@ public class MyCalculator{
           }
         System.out.println(num1+" "+operator+" "+num2+" = "+output);
       }
+      else {
+          switch(operator) {
+            case '+':
+            output = num1 + num2 + num3;
+            break;
+
+            case '-':
+            output = num1 - num2 - num3;
+            break;
+
+            case '*':
+            output = num1 * num2 * num3;
+            break;
+
+            case '/':
+            output = num1 / num2 / num3;
+            break;
+
+            default:
+              System.out.printf("You have entered the wrong operator");
+            return;
+            }
+          System.out.println(num1+" "+operator+" "+num2+" "+operator+" "+num3+" = "+output);
+      }
 
   }
 }
